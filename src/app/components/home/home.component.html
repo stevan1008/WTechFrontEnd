@@ -1,0 +1,81 @@
+<mat-card>
+  <div>
+    <form [formGroup]="dataForm" (ngSubmit)="agregarData()">
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Nombre</mat-label>
+              <input
+                matInput
+                type="text"
+                class="form-control"
+                formControlName="nombre"
+                required
+              />
+            </mat-form-field>
+          </td>
+          <td>
+            <button mat-flat-button color="warn" [disabled]="dataForm.invalid">
+              Envíar
+            </button>
+          </td>
+          <td>
+            <h2 style="text-decoration: solid;">{{ultimoDato?.nombre}}</h2>
+        </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</mat-card>
+
+<br />
+<br />
+
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Breve descripción de mi perfil</h2>
+
+<br />
+<br />
+
+<div class="main-div">
+  <mat-card class="example-card">
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="Ver Otro Hobbie">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image-1"></div>
+            <div style="text-align: center;"><mat-card-title>Tenis</mat-card-title></div>
+          </mat-card-header>
+          <mat-card-content>
+            <h3>
+              Siempre he sido muy fan de los deportes como el fútbol, el boxeo,
+              el ciclismo o el tenis. De ahí que me guste mucho el deporte como
+              el verlo o jugarlo, siendo Federer mi tenista favorito con
+              diferencia. Suelo jugar con una frecuencia moderada con amigos.
+            </h3>
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+      <mat-tab label="Ver Otro Hobbie">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image-2"></div>
+            <div style="text-align: center;"><mat-card-title>Leer</mat-card-title></div>
+          </mat-card-header>
+          <mat-card-content>
+            <h3>
+              Soy muy fan de las novelas literarias británicas y surámericanas
+              con mayor impacto de autores argentinos como Ernesto Sábato.
+              También siento un gran cariño por el portugués José Saramago, ya
+              que su influencia literario me ha reflejado momento importantes en
+              mi vida
+            </h3>
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>
+
+<br />
+<br />

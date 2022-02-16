@@ -1,0 +1,33 @@
+.example-full-width {
+    width: 400px;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+
+  .main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .example-card {
+    max-width: 700px;
+    max-height: 400px;
+    text-align: center;
+  }
+
+  .example-header-image-2 {
+    background-image: url('https://www.upb.edu.co/es/imagenes/imgtipod-blgleyendosinseparador-megustarialeer-1464204951973.jpg');
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+  }
+
+  .example-header-image-1 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/R_federer.jpg/245px-R_federer.jpg');
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+  }
